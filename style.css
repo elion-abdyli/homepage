@@ -1,10 +1,19 @@
 :root {
-    /* Solarized Dark palette */
     --base03:  #002b36;  --base02: #073642;  --base01: #586e75;  --base00: #657b83;
     --base0:   #839496;  --base1:  #93a1a1;  --base2:  #eee8d5;  --base3:  #fdf6e3;
     --yellow:  #b58900;  --orange: #cb4b16;  --red:    #dc322f;  --magenta: #d33682;
     --violet:  #6c71c4;  --blue:   #268bd2;  --cyan:   #2aa198;  --green:   #859900;
 }
+
+/* 
+:root {
+    --base03:  #1f1f1f;  --base02: #292929;  --base01: #686868;  --base00: #757575;
+    --base0:   #8f8f8f;  --base1:  #9d9d9d;  --base2:  #e8e8e8;  --base3:  #f6f6f6;
+    --yellow:  #878787;  --orange: #6b6b6b;  --red:    #646464;  --magenta: #6e6e6e;
+    --violet:  #797979;  --blue:   #757575;  --cyan:   #7c7c7c;  --green:   #828282;
+}
+ */
+
 
 *,
 *::before,
@@ -56,7 +65,10 @@
 }
 
 table {
-    width:             100%;
+
+    /* width:             100%; */
+    min-width: 90%;
+    margin: auto;
     border-collapse:   collapse;
     margin-bottom:     20px;
 }
