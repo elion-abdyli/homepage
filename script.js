@@ -57,7 +57,8 @@ function updateClock() {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
-    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    const milliseconds = String(now.getMilliseconds()).padStart(3, '0');
+    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}.${milliseconds}`;
     
     // Add ISO formatted date
     const isoDate = now.toISOString().split('T')[0]; // Gets YYYY-MM-DD format
@@ -68,5 +69,5 @@ function updateClock() {
 document.addEventListener('DOMContentLoaded', () => {
     buildTable();
     updateClock(); // Initial call to display clock immediately
-    setInterval(updateClock, 1000); // Update clock every second
+    setInterval(updateClock, 1); // Update clock every second
 });
