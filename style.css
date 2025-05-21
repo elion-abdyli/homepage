@@ -5,8 +5,9 @@
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: #f4f4f4;
+    background-color: #556677;
     color: #333;
+    border-color: #111111;
     box-sizing: border-box;
 }
 
@@ -58,7 +59,7 @@ th, td {
 }
 
 th {
-    background-color: #e9e9e9;
+    /* background-color: #e9e9e9; */
 }
 
 a {
@@ -75,7 +76,7 @@ a:hover {
     position: fixed;
     right: 20px; 
     top: 15px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 8px 12px;
