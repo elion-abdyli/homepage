@@ -65,11 +65,42 @@ function updateClock() {
     const dayOfWeek = days[now.getDay()];
     const isoDate = now.toISOString().split('T')[0]; // Gets YYYY-MM-DD format
     document.getElementById('date').textContent = `${dayOfWeek}, ${isoDate}`;
+    
+    // Update the highlighted day in the days of week sidebar
+    updateDaysOfWeek();
+}
+
+function updateDaysOfWeek() {
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const currentDay = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
+    const daysContainer = document.getElementById('days-of-week');
+    
+    // Only create the list items if they don't already exist
+    if (daysContainer.children.length === 0) {
+        days.forEach((day, index) => {
+            const dayElement = document.createElement('li');
+            dayElement.textContent = day;
+            if (index === currentDay) {
+                dayElement.classList.add('current-day');
+            }
+            daysContainer.appendChild(dayElement);
+        });
+    } else {
+        // If the list items already exist, just update the current-day class
+        Array.from(daysContainer.children).forEach((dayElement, index) => {
+            if (index === currentDay) {
+                dayElement.classList.add('current-day');
+            } else {
+                dayElement.classList.remove('current-day');
+            }
+        });
+    }
 }
 
 // Build the table when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     buildTable();
     updateClock(); // Initial call to display clock immediately
-    setInterval(updateClock, 1); // Update clock every second
+    updateDaysOfWeek(); // Initialize the days of week sidebar
+    setInterval(updateClock, 1000); // Update clock every second
 });
