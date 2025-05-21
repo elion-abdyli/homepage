@@ -1,120 +1,124 @@
 :root {
-  /* Solarized Dark palette */
-  --base03: #002b36; --base02: #073642; --base01: #586e75; --base00: #657b83;
-  --base0:  #839496; --base1:  #93a1a1; --base2:  #eee8d5; --base3:  #fdf6e3;
-  --yellow: #b58900; --orange: #cb4b16; --red:    #dc322f; --magenta: #d33682;
-  --violet:#6c71c4; --blue:   #268bd2; --cyan:   #2aa198; --green:   #859900;
+    /* Solarized Dark palette */
+    --base03:  #002b36;  --base02: #073642;  --base01: #586e75;  --base00: #657b83;
+    --base0:   #839496;  --base1:  #93a1a1;  --base2:  #eee8d5;  --base3:  #fdf6e3;
+    --yellow:  #b58900;  --orange: #cb4b16;  --red:    #dc322f;  --magenta: #d33682;
+    --violet:  #6c71c4;  --blue:   #268bd2;  --cyan:   #2aa198;  --green:   #859900;
 }
-
 
 *,
 *::before,
 *::after {
-    font-family: "Noto Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-color: #556677;
-    color: #333;
-    border-color: #111111;
-    box-sizing: border-box;
+    font-family:       "Noto Sans", sans-serif;
+    margin:            0;
+    padding:           0;
+    border:            0;
+    background-color:  var(--base02);
+    color:             var(--base0);
+    border-color:      var(--base01);
+    box-sizing:        border-box;
 }
 
 /* Header container styling */
 #header-container {
-    width: 100%;
-    min-width:100%;
-    max-height: 20vh; /* Sets maximum height to 30% of the viewport height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    overflow: hidden; /* Prevents content from spilling out if it exceeds max-height */
+    width:             100%;
+    min-width:         100%;
+    max-height:        20vh;      /* Sets maximum height to 20% of the viewport height */
+    display:           flex;
+    flex-direction:    column;
+    align-items:       center;
+    margin-bottom:     20px;
+    overflow:          hidden;    /* Prevents content from spilling out if it exceeds max-height */
 }
 
 /* Datetime container styling */
 #datetime-container {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height:20%;
+    width:             30%;
+    display:           flex;
+    flex-direction:    column;
+    align-items:       center;
+    height:            20%;
 }
 
 #clock {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 35px; /* Add margin to account for days container */
+    font-size:         2em;
+    text-align:        center;
+    margin-top:        35px;      /* Account for days container */
+    margin-bottom:     5px;
 }
 
 #date {
-    font-size: 1.2em;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #555;
+    font-size:         1.2em;
+    text-align:        center;
+    margin-bottom:     20px;
+    color:             var(--base1);
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    width:             100%;
+    border-collapse:   collapse;
+    margin-bottom:     20px;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+th,
+td {
+    border:            1px solid var(--base01);
+    padding:           8px;
+    text-align:        left;
 }
 
 th {
-    /* background-color: #e9e9e9; */
+    background-color:  var(--base03);
+    color:             var(--base2);
 }
 
 a {
-    color: #007bff;
-    text-decoration: none;
+    color:             var(--blue);
+    text-decoration:   none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration:   underline;
+    color:             var(--cyan);
 }
 
 /* Days of week styling - horizontal at top side */
 #days-container {
-    position: fixed;
-    right: 20px; 
-    top: 15px;
-    /* background-color: #fff; */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 8px 12px;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
+    position:          fixed;
+    right:             20px;
+    top:               15px;
+    background-color:  var(--base02);
+    border-radius:     8px;
+    box-shadow:        0 2px 5px rgba(0, 0, 0, 0.1);
+    padding:           8px 12px;
+    z-index:           100;
+    display:           flex;
+    justify-content:   center;
 }
 
 #days-of-week {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Make the list horizontal */
-    flex-direction: row;
-    gap: 8px; /* Add space between day elements */
+    list-style-type:   none;
+    padding:           0;
+    margin:            0;
+    display:           flex;      /* Make the list horizontal */
+    flex-direction:    row;
+    gap:               8px;       /* Add space between day elements */
 }
 
 #days-of-week li {
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 0.9em;
-    cursor: default;
-    transition: all 0.2s ease;
-    border-radius: 4px;
+    padding:           5px 10px;
+    text-align:        center;
+    font-size:         0.9em;
+    cursor:            default;
+    transition:        all 0.2s ease;
+    border-radius:     4px;
+    background-color:  var(--base03);
+    color:             var(--base0);
 }
 
 #days-of-week li.current-day {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-color:  var(--blue);
+    color:             var(--base3);
+    font-weight:       bold;
+    box-shadow:        0 1px 3px rgba(0, 0, 0, 0.2);
 }
