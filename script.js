@@ -60,9 +60,11 @@ function updateClock() {
     const milliseconds = String(now.getMilliseconds()).padStart(3, '0');
     document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}.${milliseconds}`;
     
-    // Add ISO formatted date
+    // Add ISO formatted date with day of the week
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const dayOfWeek = days[now.getDay()];
     const isoDate = now.toISOString().split('T')[0]; // Gets YYYY-MM-DD format
-    document.getElementById('date').textContent = isoDate;
+    document.getElementById('date').textContent = `${dayOfWeek}, ${isoDate}`;
 }
 
 // Build the table when the DOM is fully loaded
