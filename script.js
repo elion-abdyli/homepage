@@ -102,5 +102,5 @@ document.addEventListener('DOMContentLoaded', () => {
     buildTable();
     updateClock(); // Initial call to display clock immediately
     updateDaysOfWeek(); // Initialize the days of week sidebar
-    setInterval(updateClock, 1000); // Update clock every second
+    setInterval(updateClock, 1); // Update clock every second
 });
