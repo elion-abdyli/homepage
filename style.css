@@ -44,14 +44,14 @@
 #clock {
     font-size:         2em;
     text-align:        center;
-    margin-top:        35px;      /* Account for days container */
-    margin-bottom:     5px;
+    margin-top:        10px;      /* Account for days container */
+    margin-bottom:     10px;
 }
 
 #date {
     font-size:         1.2em;
     text-align:        center;
-    margin-bottom:     20px;
+    margin-bottom:     10px;
     color:             var(--base1);
 }
 
@@ -108,14 +108,14 @@ a:hover {
 }
 
 #days-of-week li {
+    min-width:         3vw;
     padding:           5px 10px;
     text-align:        center;
-    font-size:         0.9em;
+    font-size:         1.0em;
     cursor:            default;
     transition:        all 0.2s ease;
     border-radius:     4px;
     background-color:  var(--base03);
-    /* color:             var(--base1); */
     display:           flex;
     flex-direction:    column;
     align-items:       center;
@@ -131,12 +131,13 @@ a:hover {
 .day-name {
     /* background-color:  var(--base02); */
     margin-bottom:     3px;
-    font-weight:       500;
+    font-size:         1.em;
+    font-weight:       600;
     background-color: transparent;
 }
 
 .day-date {
-    font-size:         0.8em;
+    font-size:         1.0em;
     background-color: transparent;
     color:             var(--base1);
 }
