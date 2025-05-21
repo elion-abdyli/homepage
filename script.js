@@ -4,7 +4,20 @@ const dashboardData = [
         category: "Research",
         links: [
             { text: "Google", url: "https://www.google.com" },
-            { text: "DuckDuckGo", url: "https://duckduckgo.com" }
+            { text: "DuckDuckGo", url: "https://duckduckgo.com" },
+            { text: "Google Scholar", url: "https://scholar.google.com" },
+            { text: "JSTOR", url: "https://www.jstor.org" },
+            { text: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/" },
+            { text: "Semantic Scholar", url: "https://www.semanticscholar.org/" },
+            { text: "Connected Papers", url: "https://www.connectedpapers.com/" },
+            { text: "ResearchRabbit", url: "https://www.researchrabbit.ai/" },
+            { text: "Scite.ai", url: "https://scite.ai/" },
+            { text: "IEEE Xplore", url: "https://ieeexplore.ieee.org/" },
+            { text: "ACM Digital Library", url: "https://dl.acm.org/" },
+            { text: "arXiv", url: "https://arxiv.org/" },
+            { text: "DBLP", url: "https://dblp.org/" },
+            { text: "Web of Science", url: "https://www.webofscience.com/" },
+            { text: "Scopus", url: "https://www.scopus.com/" }
         ]
     },
     {
@@ -57,7 +70,8 @@ const dashboardData = [
             { text: "PyTorch Docs", url: "https://pytorch.org/docs/stable/" },
             { text: "Matplotlib Docs", url: "https://matplotlib.org/stable/contents.html" },
             { text: "SQLite Docs", url: "https://www.sqlite.org/docs.html" },
-            { text: "PostgreSQL Docs", url: "https://www.postgresql.org/docs/" }
+            { text: "PostgreSQL Docs", url: "https://www.postgresql.org/docs/" },
+            { text: "OWASP", url: "https://owasp.org/" }
         ]
     },
     {
@@ -69,34 +83,40 @@ const dashboardData = [
             { text: "Kaggle", url: "https://www.kaggle.com" },
             { text: "TopCoder", url: "https://www.topcoder.com" },
             { text: "HackerEarth", url: "https://www.hackerearth.com" },
-            { text: "CodeChef", url: "https://www.codechef.com" }
+            { text: "CodeChef", url: "https://www.codechef.com" },
+            { text: "TryHackMe", url: "https://tryhackme.com/" },
+            { text: "HackTheBox", url: "https://www.hackthebox.com/" }
         ]
     },
     {
-        category: "Personal",
+        category: "Office Suites",
         links: [
-            { text: "YouTube", url: "https://www.youtube.com" },
-            { text: "Reddit", url: "https://www.reddit.com" },
-            { text: "Facebook", url: "https://www.facebook.com" },
-            { text: "Twitter", url: "https://www.twitter.com" },
-            { text: "Instagram", url: "https://www.instagram.com" },
-            { text: "Netflix", url: "https://www.netflix.com" },
-            { text: "Spotify", url: "https://www.spotify.com" },
-            { text: "Amazon", url: "https://www.amazon.com" },
-            { text: "Your Hobby Site", url: "#" },
-            { text: "Your Online Banking", url: "#" }
+            { text: "Microsoft 365", url: "https://www.microsoft.com/microsoft-365" },
+            { text: "Google Workspace", url: "https://workspace.google.com/" },
+            { text: "LibreOffice", url: "https://www.libreoffice.org/" },
+            { text: "Google Docs", url: "https://docs.google.com/" },
+            { text: "Google Sheets", url: "https://sheets.google.com/" },
+            { text: "Google Slides", url: "https://slides.google.com/" },
+            { text: "Microsoft Word", url: "https://www.microsoft.com/en-us/microsoft-365/word" },
+            { text: "Microsoft Excel", url: "https://www.microsoft.com/en-us/microsoft-365/excel" },
+            { text: "Microsoft PowerPoint", url: "https://www.microsoft.com/en-us/microsoft-365/powerpoint" }
         ]
     },
     {
         category: "Utilities",
         links: [
             { text: "Bitwarden", url: "https://bitwarden.com/" },
-            { text: "1Password", url: "https://1password.com/" },
-            { text: "LastPass", url: "https://www.lastpass.com/" },
-            { text: "Bitly", url: "https://bitly.com/" },
-            { text: "TinyURL", url: "https://tinyurl.com/" },
+            { text: "Speedtest by Ookla", url: "https://www.speedtest.net/" },
             { text: "Online-Convert.com", url: "https://www.online-convert.com/" },
-            { text: "Zamzar", url: "https://www.zamzar.com/" }
+            { text: "Photopea", url: "https://www.photopea.com/" },
+            { text: "JSON Formatter", url: "https://jsonformatter.org/" },
+            { text: "Regex101", url: "https://regex101.com/" },
+            { text: "CodePen", url: "https://codepen.io/" },
+            { text: "Replit", url: "https://replit.com/" },
+            { text: "WeTransfer", url: "https://wetransfer.com/" },
+            { text: "Google Translate", url: "https://translate.google.com/" },
+            { text: "Unit Converter", url: "https://www.unitconverters.net/" },
+            { text: "VirusTotal", url: "https://www.virustotal.com/" }
         ]
     }
 ];
