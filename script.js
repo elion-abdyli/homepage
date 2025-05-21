@@ -57,8 +57,8 @@ function updateClock() {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
-    const milliseconds = String(now.getMilliseconds()).padStart(3, '0');
-    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}.${milliseconds}`;
+    // Still calculate milliseconds for accurate updates but don't display them
+    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
     
     // Add ISO formatted date with day of the week
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
