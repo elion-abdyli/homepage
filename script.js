@@ -1,4 +1,3 @@
-
 async function fetchData() {
     try {
         const response = await fetch('dashboard-data.json');
@@ -59,6 +58,10 @@ function updateClock() {
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
     document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    
+    // Add ISO formatted date
+    const isoDate = now.toISOString().split('T')[0]; // Gets YYYY-MM-DD format
+    document.getElementById('date').textContent = isoDate;
 }
 
 // Build the table when the DOM is fully loaded
