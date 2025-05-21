@@ -1,5 +1,38 @@
 body {
     font-family: "Noto Sans", sans-serif; /* Sets Noto Sans as the default font, with a fallback to a generic sans-serif font */
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Empty CSS file */
+#clock {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9e9e9;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
