@@ -146,8 +146,15 @@ const dashboardData = [
     }
 ];
 
-function buildTable() {
-    const table = document.querySelector('table'); // Assumes one table on the page
+async function fetchData() {
+    const response = await fetch('dashboard-data.json');
+    const data = await response.json();
+    return data;
+}
+
+async function buildTable() {
+    const table = document.querySelector('table');
+    const dashboardData = await fetchData();
     if (!table) {
         console.error("Table element not found!");
         return;
