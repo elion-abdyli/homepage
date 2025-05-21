@@ -1,1 +1,5 @@
+body {
+    font-family: "Noto Sans", sans-serif; /* Sets Noto Sans as the default font, with a fallback to a generic sans-serif font */
+}
+
 /* Empty CSS file */
