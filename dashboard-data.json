@@ -22,13 +22,6 @@
     {
         "category": "Articles",
         "links": [
-            { "text": "The New York Times", "url": "https://www.nytimes.com/" },
-            { "text": "The Guardian", "url": "https://www.theguardian.com/" },
-            { "text": "The Economist", "url": "https://www.economist.com/" },
-            { "text": "The Atlantic", "url": "https://www.theatlantic.com/" },
-            { "text": "The New Yorker", "url": "https://www.newyorker.com/" },
-            { "text": "NPR", "url": "https://www.npr.org/" },
-            { "text": "BBC News", "url": "https://www.bbc.com/news" },
             { "text": "Foreign Affairs", "url": "https://www.foreignaffairs.com/" },
             { "text": "Scientific American", "url": "https://www.scientificamerican.com/" },
             { "text": "Nature", "url": "https://www.nature.com/" },
@@ -74,13 +67,7 @@
             { "text": "Python Docs", "url": "https://docs.python.org/3/" },
             { "text": "C++ Reference", "url": "https://en.cppreference.com/w/" },
             { "text": "Java Docs", "url": "https://docs.oracle.com/en/java/" },
-            { "text": "C# Docs", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/" },
-            { "text": "Go Docs", "url": "https://golang.org/doc/" },
             { "text": "Rust Docs", "url": "https://doc.rust-lang.org/book/" },
-            { "text": "Swift Docs", "url": "https://developer.apple.com/documentation/swift" },
-            { "text": "Kotlin Docs", "url": "https://kotlinlang.org/docs/home.html" },
-            { "text": "PHP Manual", "url": "https://www.php.net/manual/en/" },
-            { "text": "Ruby Docs", "url": "https://www.ruby-lang.org/en/documentation/" },
             { "text": "Pandas Docs", "url": "https://pandas.pydata.org/pandas-docs/stable/" },
             { "text": "PyTorch Docs", "url": "https://pytorch.org/docs/stable/" },
             { "text": "Matplotlib Docs", "url": "https://matplotlib.org/stable/contents.html" },
@@ -106,49 +93,34 @@
     {
         "category": "Office Suites",
         "links": [
-            { "text": "Microsoft 365", "url": "https://www.microsoft.com/microsoft-365" },
-            { "text": "Google Workspace", "url": "https://workspace.google.com/" },
-            { "text": "LibreOffice", "url": "https://www.libreoffice.org/" },
             { "text": "Google Docs", "url": "https://docs.google.com/" },
             { "text": "Google Sheets", "url": "https://sheets.google.com/" },
-            { "text": "Google Slides", "url": "https://slides.google.com/" },
-            { "text": "Microsoft Word", "url": "https://www.microsoft.com/en-us/microsoft-365/word" },
-            { "text": "Microsoft Excel", "url": "https://www.microsoft.com/en-us/microsoft-365/excel" },
-            { "text": "Microsoft PowerPoint", "url": "https://www.microsoft.com/en-us/microsoft-365/powerpoint" }
+            { "text": "Google Slides", "url": "https://slides.google.com/" }
         ]
     },
     {
         "category": "Finance",
         "links": [
             { "text": "TradingView", "url": "https://www.tradingview.com/" },
-            { "text": "MartinShkreli.com", "url": "https://martinshkreli.com/" },
+            { "text": "Shkreli", "url": "https://martinshkreli.com/" },
+            { "text": "Damodaran", "url": "https://pages.stern.nyu.edu/~adamodar/" },
             { "text": "US Treasury", "url": "https://home.treasury.gov/" },
-            { "text": "Dogecoin", "url": "https://dogecoin.com/" },
             { "text": "Tesla IR", "url": "https://ir.tesla.com/" },
             { "text": "Costco IR", "url": "https://investor.costco.com/" },
             { "text": "Berkshire Hathaway", "url": "https://www.berkshirehathaway.com/" },
             { "text": "Bridgewater", "url": "https://www.bridgewater.com/" },
-            { "text": "Bloomberg", "url": "https://www.bloomberg.com/" },
             { "text": "Yahoo Finance", "url": "https://finance.yahoo.com/" },
-            { "text": "Wall Street Journal", "url": "https://www.wsj.com/" },
-            { "text": "CoinMarketCap", "url": "https://coinmarketcap.com/" }
+            { "text": "Wall Street Journal", "url": "https://www.wsj.com/" }
         ]
     },
     {
         "category": "Utilities",
         "links": [
-            { "text": "Bitwarden", "url": "https://bitwarden.com/" },
+            { "text": "Chris Titus: winutil", "url": "https://github.com/ChrisTitusTech/winutil" },
             { "text": "Speedtest by Ookla", "url": "https://www.speedtest.net/" },
-            { "text": "Online-Convert.com", "url": "https://www.online-convert.com/" },
-            { "text": "Photopea", "url": "https://www.photopea.com/" },
             { "text": "JSON Formatter", "url": "https://jsonformatter.org/" },
-            { "text": "Regex101", "url": "https://regex101.com/" },
-            { "text": "CodePen", "url": "https://codepen.io/" },
-            { "text": "Replit", "url": "https://replit.com/" },
-            { "text": "WeTransfer", "url": "https://wetransfer.com/" },
-            { "text": "Google Translate", "url": "https://translate.google.com/" },
-            { "text": "Unit Converter", "url": "https://www.unitconverters.net/" },
-            { "text": "VirusTotal", "url": "https://www.virustotal.com/" }
+            { "text": "Compiler Explorer", "url": "https://godbolt.org/" },
+            { "text": "Regex101", "url": "https://regex101.com/" }
         ]
     }
 ]
