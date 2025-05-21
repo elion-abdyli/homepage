@@ -72,23 +72,66 @@ function updateClock() {
 
 function updateDaysOfWeek() {
     const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-    const currentDay = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
+    const currentDate = new Date();
+    const currentDay = currentDate.getDay(); // 0 = Sunday, 1 = Monday, etc.
     const daysContainer = document.getElementById('days-of-week');
+    
+    // Calculate the Monday of the current week
+    const mondayOffset = currentDay === 0 ? -6 : 1 - currentDay;
+    const monday = new Date(currentDate);
+    monday.setDate(currentDate.getDate() + mondayOffset);
     
     // Only create the list items if they don't already exist
     if (daysContainer.children.length === 0) {
         days.forEach((day, index) => {
+            // Create a date for this day
+            const dayDate = new Date(monday);
+            dayDate.setDate(monday.getDate() + index);
+            
             const dayElement = document.createElement('li');
-            dayElement.textContent = day;
-            if (index === currentDay) {
+            
+            // Create separate spans for day name and date
+            const dayNameElement = document.createElement('span');
+            dayNameElement.textContent = day;
+            dayNameElement.className = 'day-name';
+            
+            const dayDateElement = document.createElement('span');
+            dayDateElement.textContent = dayDate.getDate(); // Just show the day of month
+            dayDateElement.className = 'day-date';
+            
+            // Add both to the li element
+            dayElement.appendChild(dayNameElement);
+            dayElement.appendChild(dayDateElement);
+            
+            // Mark current day (adjusting for our Monday-Sunday array)
+            const adjustedCurrentDay = currentDay === 0 ? 6 : currentDay - 1;
+            if (index === adjustedCurrentDay) {
                 dayElement.classList.add('current-day');
             }
+            
             daysContainer.appendChild(dayElement);
         });
     } else {
-        // If the list items already exist, just update the current-day class
+        // If the list items already exist, just update the current-day class and date
+        const adjustedCurrentDay = currentDay === 0 ? 6 : currentDay - 1;
+        
+        // Recalculate the Monday of this week for date updates
+        const newMonday = new Date(currentDate);
+        newMonday.setDate(currentDate.getDate() + mondayOffset);
+        
         Array.from(daysContainer.children).forEach((dayElement, index) => {
-            if (index === currentDay) {
+            // Update the date displayed
+            const dayDate = new Date(newMonday);
+            dayDate.setDate(newMonday.getDate() + index);
+            
+            // Update the date span
+            const dateSpan = dayElement.querySelector('.day-date');
+            if (dateSpan) {
+                dateSpan.textContent = dayDate.getDate();
+            }
+            
+            // Update current day highlighting
+            if (index === adjustedCurrentDay) {
                 dayElement.classList.add('current-day');
             } else {
                 dayElement.classList.remove('current-day');

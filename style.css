@@ -87,6 +87,7 @@ a:hover {
 #days-container {
     position:          fixed;
     right:             20px;
+    top:               20px;
     background-color:  var(--base02);
     border-radius:     8px;
     box-shadow:        0 2px 5px rgba(0, 0, 0, 0.1);
@@ -115,6 +116,9 @@ a:hover {
     border-radius:     4px;
     background-color:  var(--base02);
     color:             var(--base1);
+    display:           flex;
+    flex-direction:    column;
+    align-items:       center;
 }
 
 #days-of-week li.current-day {
@@ -122,4 +126,18 @@ a:hover {
     color:             var(--base3);
     font-weight:       bold;
     box-shadow:        0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.day-name {
+    margin-bottom:     3px;
+    font-weight:       500;
+}
+
+.day-date {
+    font-size:         0.8em;
+    color:             var(--base1);
+}
+
+#days-of-week li.current-day .day-date {
+    color:             var(--base3);
 }
