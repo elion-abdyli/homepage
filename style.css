@@ -1,9 +1,31 @@
-body {
-    font-family: "Noto Sans", sans-serif; /* Sets Noto Sans as the default font, with a fallback to a generic sans-serif font */
+body,html {
+    font-family: "Noto Sans", sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    border: 0;
     background-color: #f4f4f4;
     color: #333;
+}
+
+/* Header container styling */
+#header-container {
+    width: 100%;
+    min-width:100%;
+    max-height: 20vh; /* Sets maximum height to 30% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden; /* Prevents content from spilling out if it exceeds max-height */
+}
+
+/* Datetime container styling */
+#datetime-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:20%;
 }
 
 #clock {
