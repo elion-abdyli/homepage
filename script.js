@@ -64,14 +64,14 @@ function updateClock() {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const dayOfWeek = days[now.getDay()];
     const isoDate = now.toISOString().split('T')[0]; // Gets YYYY-MM-DD format
-    document.getElementById('date').textContent = `${dayOfWeek}, ${isoDate}`;
+    document.getElementById('date').textContent = `${dayOfWeek} ${isoDate}`;
     
     // Update the highlighted day in the days of week sidebar
     updateDaysOfWeek();
 }
 
 function updateDaysOfWeek() {
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
     const currentDay = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
     const daysContainer = document.getElementById('days-of-week');
     
