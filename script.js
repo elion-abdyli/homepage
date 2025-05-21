@@ -23,10 +23,18 @@ const dashboardData = [
     {
         category: "Articles",
         links: [
-            { text: "Medium", url: "https://medium.com/" },
-            { text: "Dev.to", url: "https://dev.to/" },
-            { text: "HackerNoon", url: "https://hackernoon.com/" },
-            { text: "Smashing Magazine", url: "https://www.smashingmagazine.com/" }
+            { text: "The New York Times", url: "https://www.nytimes.com/" },
+            { text: "The Guardian", url: "https://www.theguardian.com/" },
+            { text: "The Economist", url: "https://www.economist.com/" },
+            { text: "The Atlantic", url: "https://www.theatlantic.com/" },
+            { text: "The New Yorker", url: "https://www.newyorker.com/" },
+            { text: "NPR", url: "https://www.npr.org/" },
+            { text: "BBC News", url: "https://www.bbc.com/news" },
+            { text: "Foreign Affairs", url: "https://www.foreignaffairs.com/" },
+            { text: "Scientific American", url: "https://www.scientificamerican.com/" },
+            { text: "Nature", url: "https://www.nature.com/" },
+            { text: "Aeon", url: "https://aeon.co/" },
+            { text: "Nautilus", url: "https://nautil.us/" }
         ]
     },
     {
@@ -100,6 +108,23 @@ const dashboardData = [
             { text: "Microsoft Word", url: "https://www.microsoft.com/en-us/microsoft-365/word" },
             { text: "Microsoft Excel", url: "https://www.microsoft.com/en-us/microsoft-365/excel" },
             { text: "Microsoft PowerPoint", url: "https://www.microsoft.com/en-us/microsoft-365/powerpoint" }
+        ]
+    },
+    {
+        category: "Finance",
+        links: [
+            { text: "TradingView", url: "https://www.tradingview.com/" },
+            { text: "MartinShkreli.com", url: "https://martinshkreli.com/" },
+            { text: "US Treasury", url: "https://home.treasury.gov/" },
+            { text: "Dogecoin", url: "https://dogecoin.com/" },
+            { text: "Tesla IR", url: "https://ir.tesla.com/" },
+            { text: "Costco IR", url: "https://investor.costco.com/" },
+            { text: "Berkshire Hathaway", url: "https://www.berkshirehathaway.com/" },
+            { text: "Bridgewater", url: "https://www.bridgewater.com/" },
+            { text: "Bloomberg", url: "https://www.bloomberg.com/" },
+            { text: "Yahoo Finance", url: "https://finance.yahoo.com/" },
+            { text: "Wall Street Journal", url: "https://www.wsj.com/" },
+            { text: "CoinMarketCap", url: "https://coinmarketcap.com/" }
         ]
     },
     {
