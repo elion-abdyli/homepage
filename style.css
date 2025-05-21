@@ -13,7 +13,7 @@
     margin:            0;
     padding:           0;
     border:            0;
-    background-color:  var(--base02);
+    background-color:  var(--base03);
     color:             var(--base0);
     border-color:      var(--base01);
     box-sizing:        border-box;
@@ -23,12 +23,13 @@
 #header-container {
     width:             100%;
     min-width:         100%;
-    max-height:        20vh;      /* Sets maximum height to 20% of the viewport height */
+    max-height:        15vh;      /* Sets maximum height to 20% of the viewport height */
     display:           flex;
     flex-direction:    column;
     align-items:       center;
     margin-bottom:     20px;
     overflow:          hidden;    /* Prevents content from spilling out if it exceeds max-height */
+    justify-content:   center;
 }
 
 /* Datetime container styling */
@@ -86,7 +87,6 @@ a:hover {
 #days-container {
     position:          fixed;
     right:             20px;
-    top:               15px;
     background-color:  var(--base02);
     border-radius:     8px;
     box-shadow:        0 2px 5px rgba(0, 0, 0, 0.1);
@@ -103,6 +103,7 @@ a:hover {
     display:           flex;      /* Make the list horizontal */
     flex-direction:    row;
     gap:               8px;       /* Add space between day elements */
+    background-color: var(--base02);
 }
 
 #days-of-week li {
@@ -112,8 +113,8 @@ a:hover {
     cursor:            default;
     transition:        all 0.2s ease;
     border-radius:     4px;
-    background-color:  var(--base03);
-    color:             var(--base0);
+    background-color:  var(--base02);
+    color:             var(--base1);
 }
 
 #days-of-week li.current-day {
