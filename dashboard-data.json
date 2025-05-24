@@ -122,5 +122,25 @@
             { "text": "Compiler Explorer", "url": "https://godbolt.org/" },
             { "text": "Regex101", "url": "https://regex101.com/" }
         ]
+    },
+    {
+        "category": "Source",
+        "links": [
+            { "text": "/homepage", "url": "https://github.com/elion-abdyli/homepage" }
+        ]
+    },
+    {
+        "category": "Installers",
+        "links": [
+            { "text": "python", "url": "https://github.com/elion-abdyli/homepage" },
+            { "text": "clang", "url": "https://github.com/elion-abdyli/homepage" },
+            { "text": "vscode", "url": "https://github.com/elion-abdyli/homepage" },
+            { "text": "postgres", "url": "https://github.com/elion-abdyli/homepage" },
+            { "text": "sublime text", "url": "https://github.com/elion-abdyli/homepage" },
+            { "text": "vlc", "url": "https://github.com/elion-abdyli/homepage" },
+            { "text": "vim", "url": "https://github.com/elion-abdyli/homepage" },
+            { "text": "neovim", "url": "https://github.com/elion-abdyli/homepage" },
+            { "text": "github desktop", "url": "https://github.com/elion-abdyli/homepage" }
+        ]
     }
 ]
